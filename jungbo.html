@@ -1,14 +1,99 @@
 <!doctype html>
-  <html>
-    <head>
-      <title>실시간 위치</title>
-      <meta charset="utf-8">
-    </head>
-    <style type="text/css">
-  .glanlink {color: white;}
-  </style>
-    <body background="gosok.jpg" style="margin-bottom:10px;">
-        <br> <p style="text-align : center;"> <img src="prepare.jpeg" width="800" height="1000"></p>
-        <CENTER><h1><a class="glanlink" href="index.html">홈으로</a></h1></CENTER>
-    </body>
-  </html>
+<html lang="en">
+
+<head>
+  <title>안성-서울행 버스시간표</title>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<style type="text/css">
+a{ text-decoration:none }
+  .glanlink {
+    color: white;
+  }
+
+  div {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+    width: 100%;
+    display: table;
+    background-color: lightblue;
+  }
+
+  li {
+    display: inline;
+    background-color: lightblue;
+    margin-right: 20px;
+  }
+
+  @media(max-width:800px) {
+    div {
+      text-align: left;
+    }
+
+    ul {
+      width: 100px;
+      text-align: unset;
+      margin-top: 10px;
+    }
+
+    li {
+      display: block;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+</style>
+
+<body background="gosok.jpg" style="margin-bottom:20px;">
+  <div style="font-size:400%; color: white;">
+    고속버스 시간표
+  </div>
+  <ul style="font-size:150%">
+    <li><a class="glanlink" href="https://www.kobus.co.kr/main.do" target="_blank" title="예매하시려면 클릭버튼을 눌러주세요">센트럴시티 고속버스 예매하기</h1>
+    </li></a></li>
+    <li><a class="glanlink" href="http://www.nambuterminal.com/" target="_blank" title="예매하시려면 클릭버튼을 눌러주세요">남부터미널 고속버스 예매하기</h1>
+    </li></a></li>
+    <li><a class="glanlink" href="https://txbus.t-money.co.kr/otck/trmlInfEnty.do?depr_Trml_Nm=%EB%8F%99%EC%84%9C%EC%9A%B8&arvl_Trml_Nm=&depr_Trml_Cd=0030&ig=1&im=0&ic=0" target="_blank" title="예매하시려면 클릭버튼을 눌러주세요">동서울 터미널 고속버스 예매하기</h1></a></li>
+
+    <br>
+    <li><a class="glanlink" href="work2.html" title="시간표를 보시려면 클릭해주세요">서울행 버스 시간표 보기</h1></a></li>
+    <li><a class="glanlink" href="#" onclick="swal('서비스 준비중입니다.','보다 나은 서비스 제공을 위하여 페이지 준비중에 있습니다.','info')"  title="실시간위치를 보시려면 클릭해주세요">
+      버스 실시간 위치 보기</a></li>
+  </ul>
+  <p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/E0X1NPqS0Ms?autoplay=1&mute=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  <p align="middle" style="font-size:400%"><a class="glanlink" href="gongji.html" title="주의사항 및 공지사항을 보시려면 클릭해주세요">공지사항 및 유의사항</a></p>
+
+
+  <p>
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web1-2.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </p>
+
+</body>
+
+</html>
