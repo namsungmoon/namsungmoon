@@ -139,7 +139,7 @@ s.setAttribute('data-timestamp', +new Date());
           // predict can take in an image, video or canvas html element
           const prediction = await model.predict(webcam.canvas);
           if (prediction[0].probability > 0.5) {
-              document.querySelector('a').style.color = 'white'
+
               document.querySelector('div').style.color = 'white'
               document.querySelector('ul').style.color = 'white'
               document.querySelector('li').style.color = 'white'
@@ -148,11 +148,11 @@ s.setAttribute('data-timestamp', +new Date());
 
           }
           else {
-              document.querySelector('a').style.color = 'black'
+              
               document.querySelector('div').style.color = 'black'
               document.querySelector('ul').style.color = 'black'
               document.querySelector('li').style.color = 'black'
-            
+
               document.querySelector('p').style.color = 'white'
           }
       }
