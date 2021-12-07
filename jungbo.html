@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" background="gosok.jpg">
+<html lang="en">
 
 <head>
   <title>안성-서울행 버스시간표</title>
@@ -22,10 +22,7 @@
     font-size: 30px;
     text-align: center;
   }
-  body
-  {
-    background-color:lightblue;
-  }
+
   ul {
     text-align: center;
    
@@ -34,7 +31,7 @@
     margin:auto;
     min-width:780px;
     display: table;
-  
+    background-color: lightblue;
   }
 
   li {
@@ -44,9 +41,9 @@
     padding-left: 200px;
   }
 
-  @media(max-width:1500px) {
+  @media(max-width:1300px) {
     div {
-      text-align: center;
+      text-align: right;
     }
 
     ul {
@@ -66,12 +63,12 @@
   }
 </style>
 
-<header  style="margin-bottom:20px;">
+<body background="gosok.jpg" style="margin-bottom:20px;">
   <br><br>
   <div class="divstyle" style="font-size:500%; color: white;" padding-bottom:200px;  margin-top:200px; >
-    <strong>고속버스 시간표</strong> </div></header>
+    <strong>고속버스 시간표</strong> </div>
   <br>
-  <br><body>
+  <br>
   <div class="divstyle">
   <ul style="font-size:80%">
 
@@ -88,13 +85,11 @@
         버스 실시간 위치 보기</a></li>
 
   </ul>
-    </body>
-<footer>
   <p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/E0X1NPqS0Ms?autoplay=1&mute=1 " title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
   <p align="middle" style="font-size:200%"><a class="glanlink" href="gongji.html" title="주의사항 및 공지사항을 보시려면 클릭해주세요" target="_blank">공지사항 및 유의사항</a></p>
   </div>
-  
+
   <p>
   <div id="disqus_thread"></div>
   <script>
@@ -182,6 +177,6 @@
     }
     init()
   </script>
-</footer>
+</body>
 
 </html>
